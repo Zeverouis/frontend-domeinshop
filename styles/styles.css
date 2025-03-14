@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -11,39 +13,249 @@ Table of Contents:
 ////////////////////////////////////////////////////////////////////////*/
 
 
-
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+/* grijs #899CA0 en donkergroen #1C2B32 */
+* {
+    box-sizing: border-box;
+}
 
+a {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
+.header {
+    margin-bottom: 300px;
+}
 
+/*Dit is de header background (background-image) omdat op de een of andere manier
+background-image niet werkt bij mij. Heb de repo opnieuw gecloned, images opnieuw
+gedownload, alles en niks lijkt te werken. Dus er is toch echt iets met mijn IDE ofzo,
+geen idee.*/
+
+.header__img {
+    width: 99%;
+    position: absolute;
+    max-height: 100%;
+}
+
+.header-container {
+    position: relative;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.title {
+    font-size: 100px;
+    color: #1C2B32;
+    position: relative;
+}
+
+.available {
+    color: #1C2B32;
+    font-size: large;
+    margin: -5px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 20px;
+}
+
+.available-submit {
+    background: #1C2B32;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+}
+
+.domeinnaam-text {
+    color: #1C2B32;
+    font-size: medium;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
+/*grijs #899CA0 en donkergroen #1C2B32*/
 
+main {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
 
+.testimonials {
+    color: #1C2B32;
+    position: relative;
+    text-align: left;
+}
+
+.klanten {
+    color: #1C2B32;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+    margin: 70px;
+}
+
+.testimonials-1 {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 60px;
+    box-shadow: 3px 3px 20px #899CA0;
+    border-radius: 10px;
+    color: #1C2B32;
+    position: relative;
+}
+
+.testimonials-2 {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 60px;
+    box-shadow: 3px 3px 20px #899CA0;
+    border-radius: 10px;
+    color: #1C2B32;
+    position: relative;
+}
+
+.jane-img {
+    border-radius: 50%;
+    float: left;
+    width: 44px;
+    height: 44px;
+}
+
+.john-img {
+    border-radius: 50%;
+    float: left;
+    width: 44px;
+    height: 44px;
+}
+
+.jane {
+    float: left;
+    text-align: left;
+    display: inline-block;
+}
+
+.john {
+    float: left;
+    text-align: left;
+    display: inline-block;
+}
+
+em {
+    margin: 40px;
+}
+
+.quote {
+    position: absolute;
+    left: 40px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.callcenter {
+    color: #1C2B32;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: 70px;
+}
 
+
+.contact {
+    color: #1C2B32;
+    position: relative;
+    text-align: center;
+}
+
+.contact img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact p {
+    text-align: left;
+}
+
+.contact-button {
+    background: #1C2B32;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    padding: 20px;
+    position: relative;
+    left: -41%;
+    border-radius: 30px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
+/*grijs #899CA0 en donkergroen #1C2B32*/
 
+.vragen {
+    color: #1C2B32;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+    margin: 70px;
+}
 
+.faq-div {
+    padding: 25px;
+    margin: 10px;
+    background-color: #899CA0;
+    color: white;
+    border-radius: 10px;
+}
+
+details {
+    margin: 50px;
+    color: #1C2B32;
+}
+
+details:hover {
+    cursor: pointer;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    background-color: #c41a06;
+    text-align: center;
+}
